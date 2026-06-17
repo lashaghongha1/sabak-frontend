@@ -127,6 +127,25 @@
   .btn-create:hover { background: #36a420; }
   .forgot { text-align: center; font-size: 14px; color: var(--fb-blue); cursor: pointer; }
 
+  /* ─── MOBILE ─── */
+  @media (max-width: 640px) {
+    .url-bar { font-size: 10px; flex-wrap: wrap; gap: 4px; border-radius: 0; margin-top: 0; }
+    .indicators { margin: 10px 12px 0; }
+    .main-wrap { border-radius: 0; box-shadow: none; margin-bottom: 0; }
+    .fb-nav { padding: 0 12px; }
+    .fb-search { display: none; }
+    .content { flex-direction: column; align-items: center; min-height: auto; }
+    .left-info { display: none; }
+    .login-box {
+      width: 100%; margin: 16px 0 0;
+      border: none; border-radius: 0;
+      box-shadow: none; padding: 0 16px 24px;
+    }
+    .login-box input { font-size: 16px; }
+    .btn-login { font-size: 18px; }
+    .btn-create { font-size: 16px; }
+  }
+
   /* ─── POPUP ─── */
   .overlay {
     display: none; position: fixed; inset: 0;
