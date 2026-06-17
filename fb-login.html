@@ -66,27 +66,34 @@
   .login-box input:focus { border-color: var(--fb-blue); box-shadow: 0 0 0 2px rgba(24,119,242,0.2); }
 
   .btn-login {
-    padding: 14px;
+    width: 100%; padding: 14px;
     background: var(--fb-blue); color: #fff;
-    border: none; border-radius: 6px;
-    font-size: 18px; font-weight: 700;
+    border: none; border-radius: 24px;
+    font-size: 17px; font-weight: 700;
     cursor: pointer; transition: background .15s;
   }
   .btn-login:hover { background: #166fe5; }
 
   .forgot { text-align: center; font-size: 14px; color: var(--fb-blue); cursor: pointer; }
 
-  .divider { border: none; border-top: 1px solid var(--fb-border); margin: 4px 0; }
+  .divider { border: none; border-top: 1px solid var(--fb-border); margin: 8px 0; }
 
   .btn-create {
-    padding: 13px;
-    background: #42b72a; color: #fff;
-    border: none; border-radius: 6px;
-    font-size: 17px; font-weight: 700;
+    width: 100%; padding: 14px;
+    background: #fff; color: var(--fb-blue);
+    border: 1px solid var(--fb-blue); border-radius: 24px;
+    font-size: 16px; font-weight: 700;
     cursor: pointer; transition: background .15s;
-    align-self: center; min-width: 200px;
   }
-  .btn-create:hover { background: #36a420; }
+  .btn-create:hover { background: #e8f0fe; }
+  .btn-other {
+    width: 100%; padding: 14px;
+    background: #fff; color: #1c1e21;
+    border: 1px solid #ccc; border-radius: 24px;
+    font-size: 16px; font-weight: 600;
+    cursor: pointer; transition: background .15s;
+  }
+  .btn-other:hover { background: #f0f2f5; }
 
   .fb-footer {
     margin-top: 20px;
@@ -138,6 +145,7 @@
     <button class="btn-login" onclick="submitForm()">შესვლა</button>
     <div class="forgot">დაგავიწყდათ პაროლი?</div>
     <hr class="divider">
+    <button class="btn-other">სხვა ანგარიშის გამოყენება</button>
     <button class="btn-create">ახალი ანგარიშის შექმნა</button>
   </div>
 
