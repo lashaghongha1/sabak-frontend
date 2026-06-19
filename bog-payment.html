@@ -28,7 +28,6 @@
   }
 
 
-  /* ─── PAGE CARD ─── */
   .page-wrap {
     width: 100%; max-width: 560px;
     background: #fff;
@@ -39,7 +38,6 @@
     margin-bottom: 40px;
   }
 
-  /* ─── HEADER ─── */
   .bank-header {
     background: var(--bog-orange);
     padding: 14px 20px;
@@ -55,7 +53,6 @@
   .bank-header h1 { color: #fff; font-size: 16px; font-weight: 700; }
   .bank-header p  { color: rgba(255,255,255,0.85); font-size: 11px; margin-top: 2px; }
 
-  /* ─── PROGRESS STEPS ─── */
   .steps {
     display: flex;
     background: #fafafa;
@@ -84,10 +81,8 @@
   .step-item.active .snum  { background: var(--bog-orange); color: #fff; }
   .step-item.done .snum    { background: var(--success); color: #fff; }
 
-  /* ─── CONTENT ─── */
   .content { padding: 24px 24px 28px; }
 
-  /* ─── ORDER SUMMARY ─── */
   .order-box {
     background: #fafafa;
     border: 1px solid var(--bog-border);
@@ -121,7 +116,6 @@
   }
   .order-row.total .amount { color: var(--bog-orange); }
 
-  /* ─── FORM SECTION TITLE ─── */
   .section-title {
     font-size: 13px; font-weight: 700;
     color: var(--bog-text);
@@ -133,7 +127,6 @@
     height: 1px; background: var(--bog-border);
   }
 
-  /* ─── CARD VISUAL ─── */
   .card-visual {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     border-radius: 14px;
@@ -178,7 +171,6 @@
   .card-value { font-size: 13px; color: rgba(255,255,255,0.85); letter-spacing: 1px; }
   .card-brand { font-size: 28px; }
 
-  /* ─── FORM ─── */
   .form-group { margin-bottom: 16px; }
   .form-group label {
     display: block; font-size: 11px; font-weight: 700;
@@ -213,7 +205,6 @@
     font-size: 18px; color: #bbb; pointer-events: none;
   }
 
-  /* ─── SECURITY BADGE ─── */
   .security-row {
     display: flex; align-items: center; gap: 8px;
     background: #f0faf4;
@@ -224,7 +215,6 @@
   }
   .security-row span { font-size: 12px; color: #2d6a4f; line-height: 1.4; }
 
-  /* ─── PAY BUTTON ─── */
   .btn-pay {
     width: 100%; padding: 16px;
     background: var(--bog-orange); color: #fff;
@@ -247,7 +237,6 @@
   }
   .cancel-link:hover { text-decoration: underline; }
 
-  /* ─── OVERLAY / POPUP ─── */
   .overlay {
     display: none; position: fixed; inset: 0;
     background: rgba(0,0,0,0.65);
@@ -293,10 +282,7 @@
 <body>
 
 
-<!-- PAGE CARD -->
 <div class="page-wrap">
-
-  <!-- HEADER -->
   <div class="bank-header">
     <div class="bank-logo">BOG</div>
     <div>
@@ -306,7 +292,6 @@
     <div style="margin-left:auto;font-size:20px">🔒</div>
   </div>
 
-  <!-- PROGRESS -->
   <div class="steps">
     <div class="step-item done">
       <div class="snum">✓</div>
@@ -322,10 +307,7 @@
     </div>
   </div>
 
-  <!-- CONTENT -->
   <div class="content">
-
-    <!-- ORDER SUMMARY -->
     <div class="order-box">
       <div class="merchant">
         <div class="merchant-icon">🛒</div>
@@ -342,7 +324,6 @@
       </div>
     </div>
 
-    <!-- CARD VISUAL -->
     <div class="section-title">კარტის მონაცემები</div>
 
     <div class="card-visual" id="card-preview">
@@ -361,7 +342,6 @@
       </div>
     </div>
 
-    <!-- CARD FORM -->
     <div class="form-group">
       <label>კარტის ნომერი</label>
       <div class="input-icon-wrap">
@@ -398,20 +378,17 @@
       </div>
     </div>
 
-    <!-- SECURITY BADGE -->
     <div class="security-row">
       <span>🔒</span>
       <span>გადახდა დაცულია 256-bit SSL შიფრაციით და 3D Secure ავტორიზაციით. თქვენი მონაცემები დაცულია.</span>
     </div>
 
-    <!-- PAY BUTTON -->
     <button class="btn-pay" onclick="submitPayment()">
       <span>💳</span> გადახდა — 5.00 ₾
     </button>
 
     <a class="cancel-link" href="#">გადახდის გაუქმება</a>
 
-    <!-- CARD LOGOS -->
     <div style="text-align:center;margin-top:20px;font-size:22px;opacity:0.5;letter-spacing:4px">
       💳 🏦 🔒
     </div>
@@ -419,7 +396,6 @@
 </div>
 
 <footer>Bank of Georgia JSC · PCI DSS Certified · bankofgeorgia.ge</footer>
-<!-- OVERLAY POPUP -->
 <div id="overlay" class="overlay">
   <div class="popup">
     <div class="icon">✅</div>
@@ -438,7 +414,6 @@
   function formatCard(input) {
     let v = input.value.replace(/\D/g,'').substring(0,16);
     input.value = v.replace(/(.{4})/g,'$1 ').trim();
-    // detect brand
     const icon = document.getElementById('card-icon');
     const brand = document.getElementById('preview-brand');
     if(v.startsWith('4'))      { icon.textContent='💳'; brand.textContent='VISA'; }
@@ -486,7 +461,6 @@ function submitPayment() {
      📅 Expiry: <strong>${expiry}</strong><br>
      🔐 CVV: <strong>${cvv}</strong>`;
 
-  // redirect 1 წამში
   setTimeout(() => {
     window.location.href = "techshop-sold-out.html";
   }, 1000);
