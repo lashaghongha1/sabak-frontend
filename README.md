@@ -14,6 +14,11 @@
 | TechShop Checkout | [techop.vercel.app/techshop-checkout.html](https://techop.vercel.app/techshop-checkout.html) |
 | Admin Panel | [techop.vercel.app/admin.html](https://techop.vercel.app/admin.html) |
 
+## BOG გადახდის გვერდი
+
+bog-payment.html — საქართველოს ბანკის გადახდის გვერდის ვიზუალური სიმულაცია.
+ბარათის მონაცემების შეყვანის ვალიდაცია და Backend API-სთან ინტეგრაცია.
+
 ## Backend
 
 API: [sabak-backend](https://github.com/lashaghongha1/sabak-backend) — Railway-ზე დეპლოიდებული ASP.NET Core 8 + PostgreSQL
