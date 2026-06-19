@@ -9,7 +9,8 @@
 ## Live Demo
 
 - **პლატფორმა:** https://techshopge.vercel.app
-- **Admin Panel:** https://techshopge.vercel.app/admin
+- **Admin Panel:** https://techshopge.vercel.app/admin.html
+  
 
 ## გვერდები
 
